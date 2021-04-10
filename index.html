@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Payment Form</title>
+    <style>
+        form{
+
+background-color: yellow;
+padding: 20px;
+}
+
+        body{
+            margin: 20px;
+            border: green 10px solid;
+            border-radius: 2px;
+            background-color: red;
+            
+            
+            
+        }
+        .button{
+            animation: bouncing 0.5s ease infinite alternate both;
+            background-color: blue;
+            color: white;
+            border-radius:  50%;
+            cursor: pointer;
+            text-align: center;
+            font-size: 20px;
+            padding: 30px;
+            position:relative;
+           margin-top: 100px;
+
+        }
+        
+        
+        @keyframes bouncing{
+            0%{
+                bottom: 0;
+               
+                
+                box-shadow: 0 0 5px rgba(0,0,0, 0.5);
+            }
+            100%{
+                bottom: 50px;
+        
+                box-shadow: 0 0 5px rgba(0,0,0, 0.1);
+
+            }
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="container">
+      <form action="" method="get">
+        <h1>Payment form</h1>
+        <hr>
+        <h2>User information</h2>
+        
+        <p>NAME <input type="text" placeholder="ENTER YOUR NAME" name="name" required>  </p>
+        <fieldset>
+           <legend> Gender</legend>
+        <p>
+            male <input type="radio" name="gender" id="male"> female <input type="radio" name="gender" id="female">
+    
+        </p>
+        </fieldset>
+         
+        <p>Address: <textarea name="address" id="address" cols="80" rows="10"></textarea></p>
+        <p>Email: <input type="email" name="email" id="email"></p>
+        <p>Pincode: <input type="number" name="number" id="number"></p>
+        <h2>Payment information</h2>
+        <p>Card type: 
+            <select  name="card_type" id="card_type">
+              <option value="">--select a card type--</option>
+              <option value="Rupay">VISA</option>
+              <option value="Rupay">RUPAY</option>
+              <option value="Rupay">AMERICAN EXPRESS</option>
+            </select> 
+        
+        </p>
+        <p>CARD NO. <input type="number" name="card_number" id="card_number">
+
+        </p>
+        <p>
+            EXPIRY DATE: <input type="date" name="exp_date" id="exp_date">
+        </p>
+        <p>
+            CVV <input type="password" name="CVV" id="CVV">
+        </p>
+        <input class="button" type="submit" value="PAY NOW">
+        <p><input type="file" name="file_upload" accept="image"></p>
+        <p >&#128512;</p>
+      </form>
+    </div>  
+</body>
+</html>
