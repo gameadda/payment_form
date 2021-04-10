@@ -50,6 +50,12 @@ padding: 20px;
 
             }
         }
+        @media screen and (max-width:650px) {
+            .address{
+                width:100%;
+            }
+            
+        }
  
     </style>
 </head>
@@ -69,7 +75,7 @@ padding: 20px;
         </p>
         </fieldset>
          
-        <p>Address: <textarea name="address" id="address" cols="80" rows="10"></textarea></p>
+        <p>Address: <textarea class="address" name="address" id="address" cols="80" rows="10"></textarea></p>
         <p>Email: <input type="email" name="email" id="email"></p>
         <p>Pincode: <input type="number" name="number" id="number"></p>
         <h2>Payment information</h2>
